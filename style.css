@@ -1,0 +1,110 @@
+body{
+	background-color: whitesmoke;
+}
+
+h1{
+	font-family: monospace;
+	text-align: center;
+	font-size: 50px;
+	box-shadow: 10px 5px 5px pink;
+	border: solid 2px pink;
+	width: 450px;
+	background-color: white;
+	transition: all 2s;
+	
+	
+
+}
+h1:hover{
+	transform: scale(1.1);
+}
+
+
+.cabeza, .body, .pies,.manoderecha, .manoizquierda, .piederecho, .pieizquierdo{
+	background-color: pink;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cabeza{
+	width: 200px;
+	height: 160px;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 50% 50% 0% 0%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	transition: all 1s;
+	
+}
+.cabeza:hover{
+	transform: scaleX(1.2);
+}
+
+.ojoderecho, .ojoizquierdo{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: white;
+	margin-bottom: 20px;
+	transition: all 1s;
+}
+.cabeza:hover .ojoderecho{
+	
+	transform: translateX(-30px);
+}
+
+.cabeza:hover .ojoizquierdo {
+	transform: translateX(-45px);
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+}
+
+.body{
+	width: 200px;
+	height: 140px;
+	margin-top: 10px;
+	z-index: 200;
+	
+}
+
+.manoderecha, .manoizquierda{
+	width: 45px;
+	height: 120px;
+	margin: 15px;
+	border-radius: 100px;
+
+}
+.pies{
+	border-radius: 0px 0px 190px 190px;
+	display: flex;
+	justify-content: center;
+	width: 200px;
+	height: 40px;
+	z-index: 200;
+}
+.piederecho, .pieizquierdo{
+	width: 45px;
+	height: 100px;
+	border-radius: 0px 0px 100px 100px;
+	margin: 0px 15px 0px 15px;
+	
+}
+.piederecho{
+	z-index: 1;
+}
+.pieizquierdo{
+	z-index: 1;
+}
+.piederecho:hover{
+	transform:rotate(30deg);
+
+}
+
+.pieizquierdo:hover{
+	transform:rotate(-30deg);
+
+}
