@@ -1,5 +1,5 @@
 body{
-	background-color: whitesmoke;
+	background-color: white;
 }
 
 h1{
@@ -7,7 +7,7 @@ h1{
 	text-align: center;
 	font-size: 50px;
 	box-shadow: 10px 5px 5px pink;
-	border: solid 2px pink;
+	border: solid 2px #ffc0cb;
 	width: 450px;
 	background-color: white;
 	transition: all 2s;
